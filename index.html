@@ -17,24 +17,97 @@
 	</div>
 	<div class="card-countdown">
 		<div class="fade-in-bck">
-			<h1 id=date>Calculating...</h1>
 			<h2>8:00 PM MSK</h2>
+			<h1 id=date1>Calculating...</h1>
+			<br>
 			<h2>1:00 PM EST</h2>
+			<h1 id=date2>Calculating...</h1>
+			<br>
+			<h2>7:00 PM CET</h2>
+			<h1 id=date3>Calculating...</h1>
+			<br>
+			<h2>12:00 PM CT</h2>
+			<h1 id=date4>Calculating...</h1>
+
 		</div>
 	</div>
     <script type="text/javascript">
-    	var countDownDate = new Date("May 16, 2020 20:00:00").getTime();
-		var countdownfunction = setInterval(function(){
+    	var countDownDate1 = new Date("May 16, 2020 20:00:00").getTime();
+		var countdownfunction1 = setInterval(function(){
     	var now = new Date().getTime();
-    	var distance = countDownDate - now;
+    	var distance = countDownDate1 - now;
     	var days = Math.floor(distance / (1000*60*60*24));
     	var hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
     	var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
     	var seconds = Math.floor((distance % (1000*60)) / (1000));
-    	document.getElementById("date").innerHTML = days + " days " + hours + " hours " + minutes + " min " + seconds + " sec ";
+    	document.getElementById("date1").innerHTML = days + " days " + hours + " hours " + minutes + " min " + seconds + " sec ";
     		if(distance < 0){
-        		clearInterval(countdownfunction);
-      			document.getElementById("date").innerHTML = "The new adventures are about to start! :D";
+        		clearInterval(countdownfunction1);
+      			document.getElementById("date1").innerHTML = "The new adventures are about to start! :D";
+    		}
+			}, 1000);
+    </script>
+    <script type="text/javascript">
+    	var countDownDate2 = new Date("May 16, 2020 13:00:00").getTime();
+		var countdownfunction2 = setInterval(function(){
+    	var now = new Date().getTime();
+    	var distance = countDownDate2 - now;
+    	var days = Math.floor(distance / (1000*60*60*24));
+    	var hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+    	var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+    	var seconds = Math.floor((distance % (1000*60)) / (1000));
+    	document.getElementById("date2").innerHTML = days + " days " + hours + " hours " + minutes + " min " + seconds + " sec ";
+    		if(distance < 0){
+        		clearInterval(countdownfunction2);
+      			document.getElementById("date2").innerHTML = "The new adventures are about to start! :D";
+    		}
+			}, 1000);
+    </script>
+    <script type="text/javascript">
+    	var countDownDate3 = new Date("May 16, 2020 19:00:00").getTime();
+		var countdownfunction3 = setInterval(function(){
+    	var now = new Date().getTime();
+    	var distance = countDownDate3 - now;
+    	var days = Math.floor(distance / (1000*60*60*24));
+    	var hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+    	var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+    	var seconds = Math.floor((distance % (1000*60)) / (1000));
+    	document.getElementById("date3").innerHTML = days + " days " + hours + " hours " + minutes + " min " + seconds + " sec ";
+    		if(distance < 0){
+        		clearInterval(countdownfunction3);
+      			document.getElementById("date3").innerHTML = "The new adventures are about to start! :D";
+    		}
+			}, 1000);
+    </script>
+    <script type="text/javascript">
+    	var countDownDate4 = new Date("May 16, 2020 12:00:00").getTime();
+		var countdownfunction4 = setInterval(function(){
+    	var now = new Date().getTime();
+    	var distance = countDownDate4 - now;
+    	var days = Math.floor(distance / (1000*60*60*24));
+    	var hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+    	var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+    	var seconds = Math.floor((distance % (1000*60)) / (1000));
+    	document.getElementById("date4").innerHTML = days + " days " + hours + " hours " + minutes + " min " + seconds + " sec ";
+    		if(distance < 0){
+        		clearInterval(countdownfunction4);
+      			document.getElementById("date4").innerHTML = "The new adventures are about to start! :D";
+    		}
+			}, 1000);
+    </script>
+    <script type="text/javascript">
+    	var countDownDate5 = new Date("May 16, 2020 00:00:00").getTime();
+		var countdownfunction5 = setInterval(function(){
+    	var now = new Date().getTime();
+    	var distance = countDownDate5 - now;
+    	var days = Math.floor(distance / (1000*60*60*24));
+    	var hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+    	var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+    	var seconds = Math.floor((distance % (1000*60)) / (1000));
+    	document.getElementById("date5").innerHTML = days + " days " + hours + " hours " + minutes + " min " + seconds + " sec ";
+    		if(distance < 0){
+        		clearInterval(countdownfunction5);
+      			document.getElementById("date5").innerHTML = "The new adventures are about to start! :D";
     		}
 			}, 1000);
     </script>
