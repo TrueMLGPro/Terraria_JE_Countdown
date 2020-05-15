@@ -17,7 +17,7 @@
 	</div>
 	<div class="card-countdown">
 		<div class="fade-in-bck">
-			<h2>1:00 PM EST</h2>
+			<h2>8:00 PM MSK</h2>
 			<h1 id=date1>Calculating...</h1>
 		</div>
 	</div>
@@ -32,7 +32,7 @@
 		</div>
 	</div>
     <script type="text/javascript">
-    	var countDownDate = new Date("May 16, 2020 13:00:00").getTime();
+    	var countDownDate = new Date("May 16, 2020 20:00:00").getTime();
 		var countdownfunction = setInterval(function(){
     	var now = new Date().getTime();
     	var distance = countDownDate - now;
@@ -45,7 +45,7 @@
         		clearInterval(countdownfunction2);
       			document.getElementById("date1").innerHTML = "The new adventures are about to start! :D";
     		}
-			}, 1000);
+	        }, 1000);
     </script>
 </body>
 </html>
