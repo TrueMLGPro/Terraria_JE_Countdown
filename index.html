@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>Journey's End Countdown :)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+</head>
+
+<body>
+	<div class="fixed-header">
+		<p>Journey's End Countdown</p>
+	</div>
+	<div class="card-countdown">
+		<div class="fade-in-bck">
+			<h1 id=date>Calculaing...</h1>
+			<h2>20:00 MSK</h2>
+		</div>
+	</div>
+    <script type="text/javascript">
+    	var countDownDate = new Date("May 16, 2020 20:00:00").getTime();
+		var countdownfunction = setInterval(function(){
+    	var now = new Date().getTime();
+    	var distance = countDownDate - now;
+    	var days = Math.floor(distance / (1000*60*60*24));
+    	var hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+    	var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+    	var seconds = Math.floor((distance % (1000*60)) / (1000));
+    	document.getElementById("date").innerHTML = days + " days " + hours + " hours " + minutes + " min " + seconds + " sec ";
+    		if(distance < 0){
+        		clearInterval(countdownfunction);
+      			document.getElementById("date").innerHTML = "The new adventures are about to start! :D";
+    		}
+			}, 1000);
+    </script>
+</body>
+</html>
