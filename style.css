@@ -86,3 +86,8 @@ p {
     opacity: 1;
   }
 }
+
+.fade-in-bck {
+  -webkit-animation: fade-in-bck 1.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-bck 1.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
