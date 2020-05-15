@@ -20,6 +20,13 @@ h2 {
     font-size: 25px;
 }
 
+h3 {
+	color:white;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+}
+
 p {
 	color:white;
     text-align: center;
@@ -57,10 +64,33 @@ p {
 	box-shadow: 5px 5px 35px -8px rgba(0,0,0,0.30);
 }
 
+.card-credits {
+  background: -webkit-gradient(linear, center bottom, center top, from(#1832F3), to(#13C3FE));
+  width: auto;
+  height: 50%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 32px;
+  -webkit-box-shadow: 5px 5px 35px -8px rgba(0,0,0,0.30);
+  -moz-box-shadow: 5px 5px 35px -8px rgba(0,0,0,0.30);
+  box-shadow: 5px 5px 35px -8px rgba(0,0,0,0.30);
+}
+
 .card-countdown:hover {
 	-webkit-box-shadow: 10px 10px 35px -4px rgba(0,0,0,0.50);
 	-moz-box-shadow: 10px 10px 35px -4px rgba(0,0,0,0.50);
 	box-shadow: 10px 10px 35px -4px rgba(0,0,0,0.50);
+}
+
+.card-credits:hover {
+  -webkit-box-shadow: 10px 10px 35px -4px rgba(0,0,0,0.50);
+  -moz-box-shadow: 10px 10px 35px -4px rgba(0,0,0,0.50);
+  box-shadow: 10px 10px 35px -4px rgba(0,0,0,0.50);
 }
 
 @-webkit-keyframes fade-in-bck {
