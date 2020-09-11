@@ -19,6 +19,7 @@
 		<div class="fade-in-bck">
 			<h2>8:00 PM MSK</h2>
 			<h1 id=date1>Calculating...</h1>
+            <h1 id=date2></h1>
 		</div>
 	</div>
 	<div class="card-credits">
@@ -43,9 +44,10 @@
     	document.getElementById("date1").innerHTML = days + " days " + hours + " hours " + minutes + " min " + seconds + " sec";
     		if(distance < 0){
         		clearInterval(countdownfunction1);
-      			document.getElementById("date1").innerHTML = "The new adventures are about to start! :D";
+      			document.getElementById("date1").innerHTML = "The new adventures are awaiting!";
+                document.getElementById("date2").innerHTML = "Released on May 16, 2020 8:00 PM MSK"
     		}
-			}, 1000);
+		}, 1000);
     </script>
 </body>
 </html>
